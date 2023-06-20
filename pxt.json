@@ -1,5 +1,5 @@
 {
-    "name": "WAOS",
+    "name": "msmAOS",
     "description": "",
     "dependencies": {
         "device": "*",

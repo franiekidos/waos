@@ -8,7 +8,7 @@ namespace SpriteKind {
     export const Loader = SpriteKind.create()
 }
 radio.onReceivedMessage(RadioMessage.start, function () {
-    myCounter = sevenseg.createCounter(SegmentStyle.Thick, SegmentScale.Full, 1)
+    myCounter = sevenseg.createCounter(SegmentStyle.Thick, SegmentScale.Full, 5)
     timer.after(100, function () {
         valtim += 1
     })
@@ -41,10 +41,8 @@ let logger: Sprite = null
 let valtim = 0
 let myCounter: DigitCounter = null
 radio.sendMessage(RadioMessage.message1)
-forever(function () {
+game.onUpdateInterval(1000, function () {
     if (valtim == 1) {
-        timer.after(500, function () {
-            myCounter.count += 1
-        })
+        myCounter.count += 1
     }
 })
