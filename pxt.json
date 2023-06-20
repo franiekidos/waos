@@ -1,0 +1,33 @@
+{
+    "name": "WAOS",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "radio-broadcast": "*",
+        "controller": "*",
+        "sevenseg": "*",
+        "Color Fading": "github:jwunderl/pxt-color#v0.2.2",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "images.g.jres",
+        "images.g.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.12.30",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
